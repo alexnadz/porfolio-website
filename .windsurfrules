@@ -1,0 +1,101 @@
+# General Code Style & Formatting
+
+- Use Prettier for code formatting.
+- Use ESLint for linting.
+- Use TypeScript for type checking.
+
+# Project Structure & Architecture
+
+- Follow Next.js patterns and use the App Router.
+- Use only server components.
+- App directory should be used only for pages.
+- All other files should be in lib directory separated by functionality (services, hooks, components, utils, etc).
+- Store one component in one file.
+
+# Imports and exports
+
+- Use default exports for pages and layouts
+  'const HomePage = () => {
+  return <div>Home Page</div>;
+  };'
+
+export default HomePage;
+
+- Use named exports for components and hooks
+  'export const Button = () => {
+  return <button>Button</button>;
+  };'
+
+# File naming
+
+- Use kebab case for all file names.
+- Page components should have suffix 'Page'.
+- Utils should have .utils suffix.
+
+# React components
+
+- Use arrow style for components.
+- Use single responsibility principle for components.
+- Divide components into smaller components.
+- Max 200 lines of code per component. If it is more than 200 lines of code, divide it into smaller components.
+- If component returns only JSX, use arrow style.
+- User arrow function for all components, pages, and layouts.
+
+# TypeScript
+
+- Use type instead of interface (as much as possible).
+- React props should be typed with type instead of interface.
+
+# Styling & UI
+
+- Use Tailwind CSS for styling.
+- Use Shadcn UI (shadcn package) for components.
+  'npx shadcn@latest add button'
+
+- Use dark mode for website.
+- Use smooth scrolling.
+- Use animations from Framer Motion package.
+
+# Shadcn
+
+- Use class-name.utils.ts for variants. (I've changed from default utils.ts)
+
+# Git
+
+- Use conventional commits format
+
+# Info about the project
+
+- The project is a porfolio website for software developer.
+
+# Layout
+
+- Layout should have header and footer.
+- Header should have link for main sections on page.
+- Footer should have links to social networks and copyright information.
+
+# Core functionalities
+
+## 1. Main Page (/)
+
+- Main page should have hero section, about section, skills section, statistics section, contact section.
+
+### 1.1 Hero section
+
+- Hero section should have title, subtitle, button to scroll to contact section.
+
+### 1.2 About section
+
+- About section should have title, subtitle, description, image.
+
+### 1.3 Skills section
+
+- Skills section should have title, subtitle, list of skills.
+
+### 1.4 Statistics section
+
+- Statistics section should have title, subtitle, list of statistics.
+
+### 1.5 Contact section
+
+- Contact section should have title, subtitle, links to social network and email.
