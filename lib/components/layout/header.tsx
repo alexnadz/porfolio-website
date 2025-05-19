@@ -2,7 +2,6 @@ import Link from 'next/link';
 import { cn } from '@/lib/utils/class-name.utils';
 
 const SECTIONS = [
-    { id: 'hero', name: 'Home' },
     { id: 'about', name: 'About' },
     { id: 'skills', name: 'Skills' },
     { id: 'contact', name: 'Contact' },
