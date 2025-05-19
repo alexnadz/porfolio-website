@@ -3,6 +3,7 @@
 - Use Prettier for code formatting.
 - Use ESLint for linting.
 - Use TypeScript for type checking.
+- Format files after changes.
 
 # Project Structure & Architecture
 
