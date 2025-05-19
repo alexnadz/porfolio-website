@@ -12,6 +12,14 @@
 - App directory should be used only for pages.
 - All other files should be in lib directory separated by functionality (services, hooks, components, utils, etc).
 - Store one component in one file.
+- Store consts for component in component-name.consts.ts file (if there are many consts).
+- Store types for component in component-name.types.ts file (if there are many types).
+- Use enum istead alias type for literals.
+
+# Types and interfaces
+
+- Use type instead of interface (as much as possible).
+- React props should be typed with type instead of interface.
 
 # Imports and exports
 
