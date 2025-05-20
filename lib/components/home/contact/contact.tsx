@@ -1,5 +1,6 @@
 import { cn } from '@/lib/utils/class-name.utils';
 import { SOCIAL_LINKS } from './contact.consts';
+import { SocialLinksList } from './social-links-list';
 
 export const Contact = () => (
     <section id="contact" className={cn('py-20 md:py-32', 'bg-background/90 dark:bg-muted/50')}>
@@ -10,30 +11,7 @@ export const Contact = () => (
                     <p className="text-lg text-muted-foreground mb-12 text-center">
                         Feel free to reach out to me via email or social media
                     </p>
-                    <div className="flex flex-col gap-6 max-w-md">
-                        {SOCIAL_LINKS.map((link) => (
-                            <a
-                                key={link.name}
-                                href={link.href}
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                aria-label={link.ariaLabel}
-                                className="flex items-center gap-6 p-6 rounded-lg bg-card hover:bg-card/90 transition-colors"
-                            >
-                                <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center">
-                                    <link.Icon className="w-8 h-8 text-primary" />
-                                </div>
-                                <div className="flex-1">
-                                    <span className="text-lg font-medium text-left w-full">
-                                        {link.name}
-                                    </span>
-                                    <span className="text-muted-foreground mt-1 block text-left w-full">
-                                        {link.href}
-                                    </span>
-                                </div>
-                            </a>
-                        ))}
-                    </div>
+                    <SocialLinksList links={SOCIAL_LINKS} />
                 </div>
             </div>
         </div>

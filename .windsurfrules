@@ -20,6 +20,9 @@
 
 - Use type instead of interface (as much as possible).
 - React props should be typed with type instead of interface.
+  'type ComponentProps = {
+
+}'
 
 # Imports and exports
 
@@ -72,6 +75,7 @@ export default HomePage;
 # Git
 
 - Use conventional commits format
+- Use short commit messages. (e.g. "feat: add contact section with social links and email")
 
 # Info about the project
 
