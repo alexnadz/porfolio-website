@@ -20,7 +20,7 @@ export default function RootLayout({
         <html lang="en" suppressHydrationWarning>
             <body className={inter.className + ' min-h-screen bg-background antialiased'}>
                 <Header />
-                <main className="pt-20 pb-24">{children}</main>
+                <main className="pt-14 pb-24">{children}</main>
                 <Footer />
             </body>
         </html>

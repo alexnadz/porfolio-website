@@ -1,3 +1,5 @@
+'use client';
+
 import { cn } from '@/lib/utils/class-name.utils';
 import { SOCIAL_LINKS } from './contact.consts';
 import { SocialLinksList } from './social-links-list';
