@@ -101,9 +101,9 @@ export default HomePage;
 
 - Skills section should have title, subtitle, list of skills.
 
-### 1.4 Statistics section
+<!-- ### 1.4 Statistics section
 
-- Statistics section should have title, subtitle, list of statistics.
+- Statistics section should have title, subtitle, list of statistics. -->
 
 ### 1.5 Contact section
 
