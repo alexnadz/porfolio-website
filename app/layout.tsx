@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import { Analytics } from '@vercel/analytics/next';
 import { Inter } from 'next/font/google';
 import './globals.css';
 import { Header } from '@/lib/components/layout/header';
@@ -22,6 +23,7 @@ export default function RootLayout({
                 <Header />
                 <main className="pt-14 pb-24">{children}</main>
                 <Footer />
+                <Analytics />
             </body>
         </html>
     );
