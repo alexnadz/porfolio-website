@@ -1,4 +1,3 @@
-import { cn } from '@/lib/utils/class-name.utils';
 import { Skill } from './skills.types';
 import { motion } from 'framer-motion';
 

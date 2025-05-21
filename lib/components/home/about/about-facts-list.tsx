@@ -2,7 +2,6 @@
 
 import { motion } from 'framer-motion';
 import { AboutFactItemData } from './about-facts.types';
-import { ReactNode } from 'react';
 
 type AboutFactItemProps = {
     item: AboutFactItemData;
