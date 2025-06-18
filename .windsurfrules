@@ -112,3 +112,15 @@ export default HomePage;
 ### 1.5 Contact section
 
 - Contact section should have title, subtitle, links to social network and email.
+
+## 2. Projects Page (/projects)
+
+- Projects page should have title, subtitle, two sections.
+
+### 2.1 Commercial projects section
+
+- Commercial projects section should have summary of projects, because of privacy reasons.
+
+### 2.2 Personal projects section
+
+- Personal projects section should have title, subtitle, list of projects. Each project item should have title, description, image, links to github and demo.

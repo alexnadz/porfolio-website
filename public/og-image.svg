@@ -1,0 +1,63 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Dark background with gradient -->
+  <rect width="1200" height="630" fill="url(#paint0_linear)" />
+  
+  <!-- Hexagon pattern overlay -->
+  <rect width="1200" height="630" fill="url(#hexPattern)" fill-opacity="0.05" />
+  
+  <!-- Glowing orbs -->
+  <circle cx="300" cy="200" r="180" fill="url(#pinkGlow)" opacity="0.4" />
+  <circle cx="900" cy="450" r="220" fill="url(#blueGlow)" opacity="0.4" />
+  <circle cx="600" cy="315" r="250" fill="url(#purpleGlow)" opacity="0.3" />
+  
+  <!-- Text content -->
+  <g filter="url(#textShadow)">
+    <text x="600" y="250" font-family="Inter, system-ui, sans-serif" font-size="72" font-weight="700" text-anchor="middle" fill="white">Alex</text>
+    <text x="600" y="350" font-family="Inter, system-ui, sans-serif" font-size="48" font-weight="500" text-anchor="middle" fill="white">Software Developer</text>
+  </g>
+  
+  <!-- Gradient line -->
+  <rect x="400" y="400" width="400" height="4" rx="2" fill="url(#lineGradient)" />
+  
+  <!-- Definitions -->
+  <defs>
+    <!-- Background gradient -->
+    <linearGradient id="paint0_linear" x1="0" y1="0" x2="1200" y2="630" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#0f0f1a" />
+      <stop offset="1" stop-color="#1a1a2e" />
+    </linearGradient>
+    
+    <!-- Glow gradients -->
+    <radialGradient id="pinkGlow" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(300 200) rotate(90) scale(180)">
+      <stop offset="0" stop-color="#ff1493" />
+      <stop offset="1" stop-color="#ff1493" stop-opacity="0" />
+    </radialGradient>
+    
+    <radialGradient id="blueGlow" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(900 450) rotate(90) scale(220)">
+      <stop offset="0" stop-color="#00bfff" />
+      <stop offset="1" stop-color="#00bfff" stop-opacity="0" />
+    </radialGradient>
+    
+    <radialGradient id="purpleGlow" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(600 315) rotate(90) scale(250)">
+      <stop offset="0" stop-color="#9370db" />
+      <stop offset="1" stop-color="#9370db" stop-opacity="0" />
+    </radialGradient>
+    
+    <!-- Line gradient -->
+    <linearGradient id="lineGradient" x1="400" y1="402" x2="800" y2="402" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#ff1493" />
+      <stop offset="0.5" stop-color="#9370db" />
+      <stop offset="1" stop-color="#00bfff" />
+    </linearGradient>
+    
+    <!-- Hexagon pattern -->
+    <pattern id="hexPattern" x="0" y="0" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M20 0L40 10L40 30L20 40L0 30L0 10L20 0Z" stroke="white" stroke-opacity="0.1" fill="none" />
+    </pattern>
+    
+    <!-- Text shadow -->
+    <filter id="textShadow" x="-10" y="-10" width="1220" height="650" filterUnits="userSpaceOnUse">
+      <feDropShadow dx="0" dy="0" stdDeviation="8" flood-color="#ff1493" flood-opacity="0.3" />
+    </filter>
+  </defs>
+</svg>
