@@ -2,7 +2,7 @@ import Link from 'next/link';
 import { cn } from '@/lib/utils/class-name.utils';
 
 const NAVIGATION = [
-    { path: '/#hero', name: 'Hi' },
+    { path: '/#hero', name: 'Home' },
     { path: '/projects', name: 'Projects' },
     { path: '/#about', name: 'About' },
     { path: '/#skills', name: 'Skills' },

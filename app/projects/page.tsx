@@ -1,44 +1,41 @@
-import type { Metadata } from 'next';
-import { CommercialProjects } from '@/lib/components/projects/commercial-projects/commercial-projects';
-import { PersonalProjects } from '@/lib/components/projects/personal-projects/personal-projects';
+import { Metadata } from 'next';
+import { ProjectTabs } from '@/lib/components/projects/project-tabs';
 
 export const metadata: Metadata = {
-    title: 'Alex | Projects',
-    description:
-        'Explore my commercial and personal projects. From web applications to open-source contributions.',
+    title: 'Projects | Alex Nadz',
+    description: 'Explore my commercial and personal projects',
     alternates: {
         canonical: '/projects',
     },
     openGraph: {
-        title: 'Alex | Projects Portfolio',
+        title: 'Projects | Alex Nadz',
         description:
             'Explore my commercial and personal projects. From web applications to open-source contributions.',
         url: '/projects',
-        images: [
-            {
-                url: '/og-image.jpg',
-                width: 1200,
-                height: 630,
-                alt: 'Alex - Software Developer Portfolio',
-            },
-        ],
+        siteName: 'Alex Nadz',
+        locale: 'en_US',
+        type: 'website',
+    },
+    twitter: {
+        card: 'summary_large_image',
+        title: 'Projects | Alex Nadz',
+        description: 'Explore my commercial and personal projects',
     },
 };
 
 const ProjectsPage = () => (
-    <div className="container px-4 mx-auto scroll-smooth">
-        <div className="flex flex-col items-center justify-center py-16 text-center">
-            <h1 className="text-4xl font-bold tracking-tight sm:text-5xl md:text-6xl">
-                My Projects
-            </h1>
-            <p className="max-w-2xl mt-4 text-xl text-muted-foreground">
-                A showcase of my work, including both commercial and personal projects
-            </p>
-        </div>
+    <main className="container mx-auto px-4 pt-24 pb-16">
+        <div className="max-w-5xl mx-auto">
+            <div className="mb-12 text-center">
+                <h1 className="text-4xl font-bold tracking-tight sm:text-5xl mb-4">Projects</h1>
+                <p className="text-xl text-muted-foreground">
+                    A collection of my work and side projects
+                </p>
+            </div>
 
-        <CommercialProjects />
-        <PersonalProjects />
-    </div>
+            <ProjectTabs />
+        </div>
+    </main>
 );
 
 export default ProjectsPage;
