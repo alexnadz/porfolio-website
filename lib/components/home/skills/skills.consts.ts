@@ -26,6 +26,7 @@ import {
     SiGithub,
     SiGitlab,
 } from '@icons-pack/react-simple-icons';
+import { Waves } from 'lucide-react';
 import { Skill, SkillCategory } from './skills.types';
 
 export const CATEGORIES = [
@@ -173,5 +174,10 @@ export const SKILLS: Skill[] = [
         name: 'Figma',
         category: SkillCategory.OTHER,
         Icon: SiFigma,
+    },
+    {
+        name: 'Windsurf',
+        category: SkillCategory.OTHER,
+        Icon: Waves,
     },
 ];

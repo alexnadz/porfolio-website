@@ -42,12 +42,5 @@ export const HeroContent = () => (
                 View Projects
             </button> */}
         </motion.div>
-
-        {/* <motion.div
-            initial={{ x: -100, opacity: 0 }}
-            animate={{ x: 0, opacity: 1 }}
-            transition={{ duration: 0.8, delay: 0.6 }}
-            className="absolute bottom-0 left-0 w-full h-1 bg-gradient-to-r from-primary to-background dark:from-[hsl(var(--glow-pink))] dark:via-[hsl(var(--glow-purple))] dark:to-background"
-        /> */}
     </div>
 );

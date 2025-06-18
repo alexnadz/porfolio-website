@@ -10,8 +10,16 @@ const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
     title: 'Alex | Software Developer Portfolio',
-    description: 'Experienced software developer specializing in modern web technologies, creating elegant and efficient solutions for complex problems.',
-    keywords: ['software developer', 'web development', 'frontend developer', 'React', 'Next.js', 'TypeScript'],
+    description:
+        'Experienced software developer specializing in modern web technologies, creating elegant and efficient solutions for complex problems.',
+    keywords: [
+        'software developer',
+        'web development',
+        'frontend developer',
+        'React',
+        'Next.js',
+        'TypeScript',
+    ],
     authors: [{ name: 'Alex', url: 'https://github.com/alexnadz' }],
     creator: 'Alex',
     publisher: 'Alex',
@@ -23,12 +31,22 @@ export const metadata: Metadata = {
         index: true,
         follow: true,
     },
+    // icons: {
+    //     icon: '/icon.png',
+    //     shortcut: '/shortcut-icon.png',
+    //     apple: '/apple-icon.png',
+    //     other: {
+    //         rel: 'apple-touch-icon-precomposed',
+    //         url: '/apple-touch-icon-precomposed.png',
+    //     },
+    // },
     openGraph: {
         type: 'website',
         locale: 'en_US',
         url: 'https://alexnadz-portfolio.vercel.app',
         title: 'Alex | Software Developer Portfolio',
-        description: 'Experienced software developer specializing in modern web technologies, creating elegant and efficient solutions for complex problems.',
+        description:
+            'Experienced software developer specializing in modern web technologies, creating elegant and efficient solutions for complex problems.',
         siteName: 'Alex Portfolio',
         images: [
             {
@@ -42,7 +60,8 @@ export const metadata: Metadata = {
     twitter: {
         card: 'summary_large_image',
         title: 'Alex | Software Developer Portfolio',
-        description: 'Experienced software developer specializing in modern web technologies, creating elegant and efficient solutions for complex problems.',
+        description:
+            'Experienced software developer specializing in modern web technologies, creating elegant and efficient solutions for complex problems.',
         images: ['/og-image.jpg'],
         creator: '@alexnadz',
     },
