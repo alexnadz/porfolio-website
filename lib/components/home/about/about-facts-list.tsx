@@ -16,7 +16,7 @@ export const AboutFactItem = ({ item }: AboutFactItemProps) => {
             whileInView={{ opacity: 1, y: 0, scale: 1 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6, ease: 'easeOut' }}
-            className="relative flex items-center gap-4 text-lg p-4 rounded-lg bg-background/80 backdrop-blur-sm border border-border hover:bg-background/90 transition-all duration-200"
+            className="relative flex items-center gap-4 text-lg p-4 rounded-lg bg-card backdrop-blur-sm border border-border hover:bg-background/90 transition-all duration-200"
         >
             <div className="flex items-center justify-center w-6 h-6 rounded-full bg-primary/10">
                 {icon}

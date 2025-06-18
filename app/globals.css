@@ -80,7 +80,7 @@
     /* glow-inspired dark theme - vibrant purples, electric blues, and glow pinks */
     --background: oklch(0.1 0.02 280);
     --foreground: oklch(0.98 0.005 280);
-    --card: oklch(0.15 0.03 285);
+    --card: oklch(0.25 0.04 285);
     --card-foreground: oklch(0.98 0.005 280);
     --popover: oklch(0.15 0.03 285);
     --popover-foreground: oklch(0.98 0.005 280);

@@ -115,7 +115,7 @@ module.exports = {
     },
     plugins: [
         tailwindcssAnimate,
-        function({ addVariant }) {
+        function ({ addVariant }) {
             // Add light mode variant
             addVariant('light', '.light &');
         },
