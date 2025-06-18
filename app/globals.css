@@ -77,44 +77,130 @@
 }
 
 .dark {
-    --background: oklch(0.141 0.005 285.823);
-    --foreground: oklch(0.985 0 0);
-    --card: oklch(0.21 0.006 285.885);
-    --card-foreground: oklch(0.985 0 0);
-    --popover: oklch(0.21 0.006 285.885);
-    --popover-foreground: oklch(0.985 0 0);
-    --primary: oklch(0.92 0.004 286.32);
-    --primary-foreground: oklch(0.21 0.006 285.885);
-    --secondary: oklch(0.274 0.006 286.033);
-    --secondary-foreground: oklch(0.985 0 0);
-    --muted: oklch(0.274 0.006 286.033);
-    --muted-foreground: oklch(0.705 0.015 286.067);
-    --accent: oklch(0.274 0.006 286.033);
-    --accent-foreground: oklch(0.985 0 0);
-    --destructive: oklch(0.704 0.191 22.216);
-    --border: oklch(1 0 0 / 10%);
-    --input: oklch(1 0 0 / 15%);
-    --ring: oklch(0.552 0.016 285.938);
-    --chart-1: oklch(0.488 0.243 264.376);
-    --chart-2: oklch(0.696 0.17 162.48);
-    --chart-3: oklch(0.769 0.188 70.08);
-    --chart-4: oklch(0.627 0.265 303.9);
-    --chart-5: oklch(0.645 0.246 16.439);
-    --sidebar: oklch(0.21 0.006 285.885);
-    --sidebar-foreground: oklch(0.985 0 0);
-    --sidebar-primary: oklch(0.488 0.243 264.376);
-    --sidebar-primary-foreground: oklch(0.985 0 0);
-    --sidebar-accent: oklch(0.274 0.006 286.033);
-    --sidebar-accent-foreground: oklch(0.985 0 0);
-    --sidebar-border: oklch(1 0 0 / 10%);
-    --sidebar-ring: oklch(0.552 0.016 285.938);
+    /* glow-inspired dark theme - vibrant purples, electric blues, and glow pinks */
+    --background: oklch(0.1 0.02 280);
+    --foreground: oklch(0.98 0.005 280);
+    --card: oklch(0.15 0.03 285);
+    --card-foreground: oklch(0.98 0.005 280);
+    --popover: oklch(0.15 0.03 285);
+    --popover-foreground: oklch(0.98 0.005 280);
+    --primary: oklch(0.7 0.25 320);
+    --primary-foreground: oklch(0.1 0.02 280);
+    --secondary: oklch(0.6 0.3 260);
+    --secondary-foreground: oklch(0.98 0.005 280);
+    --muted: oklch(0.2 0.05 285);
+    --muted-foreground: oklch(0.7 0.1 290);
+    --accent: oklch(0.5 0.28 300);
+    --accent-foreground: oklch(0.98 0.005 280);
+    --destructive: oklch(0.7 0.3 20);
+    --border: oklch(0.3 0.1 290 / 30%);
+    --input: oklch(0.3 0.1 290 / 30%);
+    --ring: oklch(0.7 0.25 320 / 70%);
+    --chart-1: oklch(0.7 0.25 320);
+    --chart-2: oklch(0.6 0.3 260);
+    --chart-3: oklch(0.5 0.28 300);
+    --chart-4: oklch(0.65 0.3 220);
+    --chart-5: oklch(0.7 0.3 20);
+    --sidebar: oklch(0.12 0.03 280);
+    --sidebar-foreground: oklch(0.98 0.005 280);
+    --sidebar-primary: oklch(0.7 0.25 320);
+    --sidebar-primary-foreground: oklch(0.12 0.03 280);
+    --sidebar-accent: oklch(0.5 0.28 300);
+    --sidebar-accent-foreground: oklch(0.98 0.005 280);
+    --sidebar-border: oklch(0.3 0.1 290 / 30%);
+    --sidebar-ring: oklch(0.7 0.25 320 / 70%);
+    --glow-blue: 220 100% 70%;
+    --glow-pink: 320 100% 70%;
+    --glow-purple: 280 90% 60%;
+    --glow-glow: 300 100% 75%;
+    --glow-dark: 280 80% 10%;
 }
 
 @layer base {
     * {
-        @apply border-border outline-ring/50;
+        border-color: hsl(var(--border));
+        outline-color: hsl(var(--ring) / 0.5);
     }
     body {
-        @apply bg-background text-foreground;
+        background-color: hsl(var(--background));
+        color: hsl(var(--foreground));
     }
+}
+
+/* glow-inspired glow effects and animations */
+.glow-glow {
+    position: relative;
+}
+
+.glow-glow::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+        to right,
+        hsl(var(--glow-pink)),
+        hsl(var(--glow-purple)),
+        hsl(var(--glow-blue))
+    );
+    opacity: 0.3;
+    filter: blur(1rem);
+    z-index: -10;
+}
+
+.glow-text {
+    background-clip: text;
+    color: transparent;
+    background-image: linear-gradient(
+        to right,
+        hsl(var(--glow-pink)),
+        hsl(var(--glow-purple)),
+        hsl(var(--glow-blue))
+    );
+    animation: glow 2s ease-in-out infinite;
+}
+
+.glow-border {
+    border-width: 1px;
+    border-color: transparent;
+    background-image: linear-gradient(
+        to right,
+        hsl(var(--glow-pink)),
+        hsl(var(--glow-purple)),
+        hsl(var(--glow-blue))
+    );
+    background-clip: border-box;
+}
+
+/* Custom animation delay utilities */
+.animation-delay-1000 {
+    animation-delay: 1s;
+}
+
+.animation-delay-2000 {
+    animation-delay: 2s;
+}
+
+.animation-delay-3000 {
+    animation-delay: 3s;
+}
+
+/* Explicit keyframe animations for orbs */
+@keyframes orbPulse {
+    0% {
+        transform: scale(0.8);
+        opacity: 0.3;
+    }
+    50% {
+        transform: scale(1.2);
+        opacity: 0.7;
+    }
+    100% {
+        transform: scale(0.8);
+        opacity: 0.3;
+    }
+}
+
+.animate-orb {
+    will-change: transform, opacity;
+    animation: orbPulse 4s ease-in-out infinite;
 }
