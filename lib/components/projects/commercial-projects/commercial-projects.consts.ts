@@ -81,7 +81,7 @@ export const PROJECT_QUALITIES: ProjectQuality[] = [
 
 export const EXPERIENCE_SUMMARY: ExperienceSummary = {
     yearsOfExperience: 4,
-    projectsCompleted: 15,
-    industriesServed: 6,
+    projectsCompleted: 10,
+    industriesServed: 4,
     teamSize: '1-10 members',
 };

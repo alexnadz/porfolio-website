@@ -12,7 +12,7 @@ export const ABOUT_FACTS: AboutFactItemData[] = [
     },
     {
         icon: <CheckCircle2 />,
-        text: '15+ projects completed',
+        text: '10+ projects completed',
     },
     {
         icon: <CheckCircle2 />,
