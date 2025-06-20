@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import { PersonalProject, PersonalProjectStatus } from './personal-projects.types';
 import { STATUS_VARIANT_MAP, STATUS_LABEL_MAP } from './personal-project-card.consts';
 import { Badge } from '@/lib/ui/badge';
@@ -20,17 +21,12 @@ export const PersonalProjectCard = ({ project }: PersonalProjectCardProps) => (
                 </Badge>
             </div>
 
-            {/* Placeholder for when images are available */}
-            <div className="absolute inset-0 flex items-center justify-center bg-muted text-muted-foreground">
-                {project.title} Screenshot
-            </div>
-            {/* Uncomment when images are available */}
-            {/* <Image 
+            <Image
                 src={project.image}
                 alt={`Screenshot of ${project.title}`}
                 fill
                 className="object-cover"
-            /> */}
+            />
         </div>
 
         <div className="flex flex-col p-6">
